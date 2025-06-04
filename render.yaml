@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: masternasvyazi-bot
+    env: python
+    buildCommand: ""
+    startCommand: python main.py
+    repo: https://github.com/Master-na-s/masternasvyazi
+    branch: main
+    autoDeploy: true
+    envVars:
+      - key: BOT_TOKEN
+        value: 6669412390:AAF6eH_st8knESyMjACZZr3q10g1Ul2QYJk
