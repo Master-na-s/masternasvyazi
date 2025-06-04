@@ -3,7 +3,7 @@ services:
     name: masternasvyazi-bot
     runtime: python
     buildCommand: ""
-    startCommand: python main.ru
+    startCommand: python bot.ru
     envVars:
       - key: TELEGRAM_BOT_TOKEN
         value: your-actual-token-here
