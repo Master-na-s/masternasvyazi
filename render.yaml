@@ -3,7 +3,7 @@ services:
     name: masternasvyazi-bot
     env: python
     buildCommand: ""
-    startCommand: python main.py
+    startCommand: python bot.py
     repo: https://github.com/Master-na-s/masternasvyazi
     branch: main
     autoDeploy: true
