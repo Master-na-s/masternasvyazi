@@ -1,0 +1,15 @@
+import telebot
+
+TOKEN = "7608439597:AAF6eH_st8knESyMjACZZr3q10g1U2QYJk"
+
+bot = telebot.TeleBot(TOKEN)
+
+@bot.message_handler(commands=['start'])
+def send_welcome(message):
+    bot.reply_to(message, "Привет! Я бот 'Мастер на связи'. Чем могу помочь?")
+
+@bot.message_handler(func=lambda message: True)
+def echo_all(message):
+    bot.reply_to(message, f"Вы сказали: {message.text}")
+
+bot.polling()
