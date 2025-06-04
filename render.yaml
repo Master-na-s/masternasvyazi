@@ -1,12 +1,9 @@
 services:
   - type: web
     name: masternasvyazi-bot
-    env: python
+    runtime: python
     buildCommand: ""
     startCommand: python bot.py
-    repo: https://github.com/Master-na-s/masternasvyazi
-    branch: main
-    autoDeploy: true
     envVars:
-      - key: BOT_TOKEN
-        value: 6669412390:AAF6eH_st8knESyMjACZZr3q10g1Ul2QYJk
+      - key: TELEGRAM_BOT_TOKEN
+        value: your-actual-token-here
